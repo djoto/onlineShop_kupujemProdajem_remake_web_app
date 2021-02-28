@@ -1,0 +1,493 @@
+body {
+    margin: 0;
+    background-color: rgb(226, 224, 224);
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9c9c9c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #5f5d5d;}
+
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  ul.topnav {
+    top: -44px;
+  }
+}
+
+
+#logo{
+    width: 120px;
+    height: 44px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#searchPanel {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 44px;
+}
+
+.searchTitle {
+    background-color: #9c9c9c;
+    padding: 10px;
+    flex: 33.3%;
+}
+
+.searchPrice {
+    background-color: #9c9c9c;
+    padding: 10px;
+    flex: 33.3%;
+}
+.searchCategory {
+    background-color: #9c9c9c;
+    padding: 10px;
+    flex: 33.3%;
+}
+
+
+@media screen and (max-width: 600px) {
+    #searchPanel {
+        flex-direction: column;
+        top: 132px;
+    }
+}
+
+#searchPanel input[type=text] {
+    padding: 3px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: none;
+  }
+
+
+
+.submitSearch{
+    color: black;
+    margin-top: 5px;
+    margin-right: 10px;
+    background: #ccc;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px 3px 10px;
+}
+
+.submitSearch:hover {
+    background-color: #5f5d5d;
+}  
+
+
+.container-fluid{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    color:black;
+    background-color: rgb(226, 224, 224);
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+.product {
+    width: 230px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+    text-align: center;
+    border-radius: 5%;
+    background-color: #9c9c9c;
+}
+.product img {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    width: 100%;
+    height: 150px;
+}
+.describe-product {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+.describeTitle{
+    width: 75%;
+    text-align: left;
+}
+.describePrice{
+    width: 25%;
+    text-align: right;
+}
+.link-product:link {
+    color: black;
+    text-decoration: none;
+}
+.link-product:visited {
+    color: black;
+    text-decoration: none;
+}
+.link-product:hover {
+    color: black;
+    cursor: pointer;
+    opacity: 0.8;
+    text-decoration: none;
+}
+.link-product:active {
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    color:black;
+    background-color: rgb(226, 224, 224);
+}
+
+form #yourInput{
+    width: 50%;
+}
+@media only screen and (min-width: 800px){
+    form #yourInput {
+        width: 30%;
+    }
+}
+
+.error {
+    color: #FF0000;
+}
+
+#signUpButton{
+    margin-top: 10px;
+    background-color:rgb(172, 172, 172);
+    font-weight: bold;
+    color: black;
+    width: 130px;
+    border: none;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+}
+
+#signUpButton:hover{
+    background-color: #5f5d5d;
+}
+
+#submitForm{
+    background-color: rgb(172, 172, 172);
+    font-weight: bold;
+    color: black;
+    width: 100px;
+    border: none;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+}
+
+#submitForm:hover{
+    background-color: #5f5d5d;
+}
+
+#logOutButton {
+    background-color: #9c9c9c;
+    color: black;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    width: 100%;
+}
+#logOutButton:hover {
+    background-color: #5f5d5d;
+}
+
+#profilePanel {
+    text-align: left;
+    font-size: large;
+    background-color: #9c9c9c;
+    padding: 10px 15px 10px 15px;
+}
+.link-seller:hover {
+    cursor: pointer;
+}
+.link-orderCustomer:hover {
+    cursor: pointer;
+}
+.link-orderSeller:hover {
+    cursor: pointer;
+}
+
+.confirmButton{
+    margin-top: 10px;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.confirmButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+#productContent{
+    margin-top: 30px;
+    background-color: #9c9c9c;
+}
+
+.productImages {
+    text-align: center;
+    padding-bottom: 2em;
+}
+#imgProduct {
+    border-radius: 10%;
+    padding: 15px;
+    width: 250px;
+    height: 180px;
+}
+
+.orderButton{
+    margin-top: 10px;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.orderButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+
+.nav {
+    background-color: #9c9c9c;
+    border-bottom: 2px solid #9c9c9c;
+}
+.nav-item {
+    border: 2px solid #5f5d5d;
+    border-bottom: none;
+    border-left: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+#myP {
+    border-left: 2px solid #5f5d5d ;
+}
+.nav-link:link {
+    background-color: #9c9c9c;
+    color: black;
+}
+.nav-link:visited {
+    background-color: #9c9c9c;
+    color: black;
+  }
+.nav-link:hover {
+    background-color: #5f5d5d;
+    color: black;
+}
+.nav-link:active {
+    background-color: #5f5d5d;
+    color: black;
+}
+
+@media only screen and (max-width: 700px){
+    .nav-item {
+        width: 25%;
+        text-align: center;
+    }
+}
+
+.deleteButton{
+    margin-top: 10px;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.deleteButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+.editButton{
+    margin-top: 10px;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.editButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+.link-customer{
+    cursor: pointer;
+}
+
+
+#menuAdmin {
+    background-color: #9c9c9c;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+#menuAdmin:hover {
+    background-color: #5f5d5d;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9c9c9c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: white;
+}
+.option:hover {
+    background-color: #5f5d5d;
+    color: white;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#bodyId {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+#users {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#users td, #users th {
+    border: 1px solid black;
+    padding: 6px 3px 6px 3px;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #362db9;
+    color: white;
+}
+
+.removeButton{
+    background-color: #9c9c9c;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.removeButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+.blockButton{
+    background-color: #9c9c9c;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.blockButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+.unblockButton{
+    background-color: #9c9c9c;
+    border: none;
+    padding: 2px 5px 2px 5px;
+    color: black;
+    font-size: 20px;
+}
+.unblockButton:hover{
+    border: none;
+    padding: 2px 5px 2px 5px;
+    background-color: #5f5d5d;
+}
+
+.topnav {
+    border-bottom: 2px solid black;
+}
+#searchPanel {
+    border-bottom: 2px solid black;
+}
